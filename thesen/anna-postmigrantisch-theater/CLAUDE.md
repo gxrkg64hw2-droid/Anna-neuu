@@ -44,7 +44,7 @@ Literatur entwickelte Schlussfolgerungen formulieren, nicht als eigene normative
 
 ## Bearbeitungsstand (Stand: Übergabe)
 
-- **Kap. 1:** Erstentwurf vorhanden (Volltext in `notes/entwurf-anna-stand.md`), Kap. 2 begonnen.
+- **Kap. 1:** FERTIG und offline verifiziert (Bibkeys/Jahre/Seiten geprüft, Plagiatscheck ok) in `arbeit.md`. Korrektur ggü. Entwurf: Kanak Attak = Yıldız 2025, S. 126 (nicht Visionen S. 56).
 - **KRITISCH:** Im Entwurf stehen überall Platzhalter „(Jahr)" und noch **nicht verifizierte
   Seitenzahlen**. Vor jeder Übernahme in den Fließtext: frischer `rag search`, `citation_suggestion`
   verbatim, echte Bibkeys + geprüfte Seiten. Kein Zitat aus dem Gedächtnis.
