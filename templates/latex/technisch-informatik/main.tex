@@ -1,0 +1,31 @@
+% Profile: technisch-informatik
+\input{_common/preamble.tex}
+\input{packages.tex}
+\input{code-style.tex}
+
+\addbibresource{../bibliography.bib}
+
+% --- Override metadata as needed:
+\renewcommand{\thesisAuthor}{Vorname Nachname}
+\renewcommand{\thesisTitle}{Titel der technisch-informatischen Bachelorarbeit}
+\renewcommand{\thesisHochschule}{Hochschulname}
+\renewcommand{\thesisStudiengang}{Wirtschaftsinformatik / Informatik}
+
+\begin{document}
+
+\input{_common/titlepage.tex}
+\ifsperrvermerk\input{_common/sperrvermerk.tex}\fi
+\tableofcontents
+\input{_common/abkuerzungsverzeichnis.tex}
+
+\input{kapitel/01-einleitung.tex}
+\input{kapitel/02-grundlagen.tex}
+\input{kapitel/03-konzept.tex}
+\input{kapitel/04-implementierung.tex}
+\input{kapitel/05-evaluation.tex}
+\input{kapitel/06-fazit.tex}
+
+\printbibliography
+\input{_common/eidesstattliche-erklaerung.tex}
+
+\end{document}

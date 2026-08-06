@@ -1,0 +1,44 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Bachelor thesis citation toolkit"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf>=1.24.0",
+    "ocrmypdf>=16.0.0",
+    "sqlite-vec>=0.1.6",
+    "bm25s>=0.2.0",
+    "pystemmer>=2.2.0",
+    "openai>=1.50.0",
+    "httpx>=0.27.0",
+    "tiktoken>=0.7.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+rerank = ["sentence-transformers>=3.0.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["rag"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.6.0",
+]

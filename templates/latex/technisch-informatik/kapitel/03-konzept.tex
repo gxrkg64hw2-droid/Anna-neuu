@@ -1,0 +1,25 @@
+\chapter{Konzept}\label{chap:konzept}
+
+\section{Anforderungen}\label{sec:anforderungen}
+% TODO: Funktionale und nicht-funktionale Anforderungen.
+
+\section{Architekturentwurf}\label{sec:architektur}
+% TODO: Architekturdiagramm via TikZ. Vorlage in figures/architektur.tex.
+
+% Beispiel TikZ-Architekturdiagramm:
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[
+    box/.style={draw, rounded corners, minimum height=1cm, minimum width=2.5cm, align=center}
+  ]
+    \node[box] (in)   at (0,0) {Eingabe};
+    \node[box] (proc) at (4,0) {Verarbeitung};
+    \node[box] (out)  at (8,0) {Ausgabe};
+    \draw[-Latex] (in) -- (proc);
+    \draw[-Latex] (proc) -- (out);
+  \end{tikzpicture}
+  \caption{Beispiel-Architekturdiagramm.}\label{fig:architektur}
+\end{figure}
+
+\section{Designentscheidungen}\label{sec:design}
+% TODO: Welche Trade-offs wurden abgewogen?

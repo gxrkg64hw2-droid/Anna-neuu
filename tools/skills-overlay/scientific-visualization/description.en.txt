@@ -1,0 +1,1 @@
+Meta-skill for publication-ready figures. Use when creating journal or thesis figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting. Orchestrates matplotlib/seaborn/plotly with publication styles. For quick exploration use seaborn or plotly directly.

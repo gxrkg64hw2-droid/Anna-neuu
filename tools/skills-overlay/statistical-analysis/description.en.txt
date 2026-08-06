@@ -1,0 +1,1 @@
+Guided statistical analysis with test selection and reporting. Use when you need help choosing appropriate tests for your data, assumption checking, power analysis, and APA-formatted results. Best for empirical methodology and results chapters. For DACH-specific reporting standards (German decimal comma, Mayring qualitative content analysis) see dach_reporting_standards.md.

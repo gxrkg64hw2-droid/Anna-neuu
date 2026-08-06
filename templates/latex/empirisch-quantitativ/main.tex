@@ -1,0 +1,30 @@
+% Profile: empirisch-quantitativ
+\input{_common/preamble.tex}
+\input{packages.tex}
+
+\addbibresource{../bibliography.bib}
+
+\renewcommand{\thesisAuthor}{Vorname Nachname}
+\renewcommand{\thesisTitle}{Titel der empirisch-quantitativen Bachelorarbeit}
+\renewcommand{\thesisHochschule}{Hochschulname}
+\renewcommand{\thesisStudiengang}{BWL / Marketing / Wirtschaftswissenschaften}
+
+\begin{document}
+
+\input{_common/titlepage.tex}
+\ifsperrvermerk\input{_common/sperrvermerk.tex}\fi
+\tableofcontents
+\input{_common/abkuerzungsverzeichnis.tex}
+
+\input{kapitel/01-einleitung.tex}
+\input{kapitel/02-theorie.tex}
+\input{kapitel/03-hypothesen.tex}
+\input{kapitel/04-methodik.tex}
+\input{kapitel/05-ergebnisse.tex}
+\input{kapitel/06-diskussion.tex}
+\input{kapitel/07-fazit.tex}
+
+\printbibliography
+\input{_common/eidesstattliche-erklaerung.tex}
+
+\end{document}

@@ -1,0 +1,52 @@
+% Reusable table templates for empirisch-quantitativ profile.
+% Use \input{tabellen-vorlagen.tex} in any chapter that needs them.
+
+% Stichprobenbeschreibung
+\newcommand{\tabStichprobe}{
+  \begin{table}[h]
+    \caption{Stichprobenbeschreibung}\label{tab:stichprobe}
+    \centering
+    \begin{tabular}{lrr}
+      \toprule
+      Variable & Auspraegung & N (\%) \\
+      \midrule
+      Geschlecht & weiblich & X (XX,X) \\
+                 & maennlich & X (XX,X) \\
+                 & divers    & X (XX,X) \\
+      \midrule
+      Alter      & M (SD)    & X,XX (X,XX) \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+}
+
+% Reliabilitaetstabelle
+\newcommand{\tabReliabilitaet}{
+  \begin{table}[h]
+    \caption{Reliabilitaet und Konvergenzvaliditaet}\label{tab:reliabilitaet}
+    \centering
+    \begin{tabular}{lrrrr}
+      \toprule
+      Konstrukt & Items & Cronbachs $\alpha$ & CR & AVE \\
+      \midrule
+      Konstrukt 1 & X & 0,XX & 0,XX & 0,XX \\
+      Konstrukt 2 & X & 0,XX & 0,XX & 0,XX \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+}
+
+% Pfadkoeffizienten
+\newcommand{\tabPfadkoeffizienten}{
+  \begin{table}[h]
+    \caption{Pfadkoeffizienten und Hypothesentests}\label{tab:pfade}
+    \centering
+    \begin{tabular}{llrrrl}
+      \toprule
+      Pfad & Hypothese & $\beta$ & $t$ & $p$ & Status \\
+      \midrule
+      A $\rightarrow$ B & H1 & 0,XX & X,XX & 0,XXX & angenommen \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+}

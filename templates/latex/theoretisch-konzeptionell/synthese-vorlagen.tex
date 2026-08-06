@@ -1,0 +1,37 @@
+% Reusable templates for theoretisch-konzeptionell profile.
+% Use \input{synthese-vorlagen.tex} in any chapter that needs them.
+
+% Theorienvergleichstabelle
+\newcommand{\tabTheorienvergleich}{
+  \begin{table}[h]
+    \caption{Theorienvergleich}\label{tab:theorien}
+    \centering
+    \begin{tabular}{lll}
+      \toprule
+      Aspekt & Theorie A & Theorie B \\
+      \midrule
+      Annahmen   & \dots & \dots \\
+      Konstrukte & \dots & \dots \\
+      Mechanismen & \dots & \dots \\
+      Reichweite & \dots & \dots \\
+      Limitationen & \dots & \dots \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+}
+
+% Konzeptmatrix
+\newcommand{\tabKonzeptmatrix}{
+  \begin{table}[h]
+    \caption{Konzeptmatrix}\label{tab:konzeptmatrix}
+    \centering
+    \begin{tabular}{lccc}
+      \toprule
+      Quelle & Konzept 1 & Konzept 2 & Konzept 3 \\
+      \midrule
+      Mueller (2020) & x & x & \\
+      Schmidt (2022) & x &   & x \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+}

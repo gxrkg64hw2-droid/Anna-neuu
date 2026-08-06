@@ -1,0 +1,30 @@
+% Mayring-Kategoriensystem als longtable.
+% Use \input{kategoriensystem.tex} in kapitel/05-kategoriensystem.tex.
+
+\begin{longtable}{p{3cm}p{4cm}p{4cm}p{3cm}}
+\caption{Kategoriensystem nach Mayring}\label{tab:kategoriensystem}\\
+\toprule
+Kategorie & Definition & Ankerbeispiel & Kodierregel \\
+\midrule
+\endfirsthead
+
+\toprule
+Kategorie & Definition & Ankerbeispiel & Kodierregel \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{4}{r}{\textit{Fortsetzung auf naechster Seite}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+K1 Hauptkategorie A & Definition Kategorie A & "Beispielzitat aus Interview 3" & Wann triff K1 nicht zu (Abgrenzungsregel) \\
+\addlinespace
+K1.1 Subkategorie A1 & Definition Subkategorie A1 & "Beispielzitat" & Spezifische Regel \\
+\addlinespace
+K1.2 Subkategorie A2 & Definition Subkategorie A2 & "Beispielzitat" & Spezifische Regel \\
+\addlinespace
+K2 Hauptkategorie B & Definition Kategorie B & "Beispielzitat" & Abgrenzungsregel \\
+\end{longtable}

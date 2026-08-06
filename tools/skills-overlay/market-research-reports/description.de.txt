@@ -1,0 +1,1 @@
+Umfassende Marktforschungsberichte im Stil von Top-Beratungen (McKinsey, BCG, Gartner) mit professioneller LaTeX-Formatierung, integrierter Datenbeschaffung via research-lookup und multi-Framework-Analyse: Porter Five Forces, PESTLE, SWOT, TAM/SAM/SOM, BCG-Matrix. Geeignet fuer Marketing- und Wirtschafts-Bachelorarbeiten mit Marktanalyse-Kapitel.

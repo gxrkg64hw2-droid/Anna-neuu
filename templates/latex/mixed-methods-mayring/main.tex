@@ -1,0 +1,35 @@
+% Profile: mixed-methods-mayring
+\input{_common/preamble.tex}
+\input{packages.tex}
+
+\addbibresource{../bibliography.bib}
+
+\renewcommand{\thesisAuthor}{Vorname Nachname}
+\renewcommand{\thesisTitle}{Titel der qualitativen / Mixed-Methods-Bachelorarbeit}
+\renewcommand{\thesisHochschule}{Hochschulname}
+\renewcommand{\thesisStudiengang}{Sozialwissenschaften / Marketing / Wirtschaft}
+
+\begin{document}
+
+\input{_common/titlepage.tex}
+\ifsperrvermerk\input{_common/sperrvermerk.tex}\fi
+\tableofcontents
+\input{_common/abkuerzungsverzeichnis.tex}
+
+\input{kapitel/01-einleitung.tex}
+\input{kapitel/02-theorie.tex}
+\input{kapitel/03-forschungsdesign.tex}
+\input{kapitel/04-datenerhebung.tex}
+\input{kapitel/05-kategoriensystem.tex}
+\input{kapitel/06-auswertung.tex}
+\input{kapitel/07-diskussion.tex}
+\input{kapitel/08-fazit.tex}
+
+\printbibliography
+\input{_common/eidesstattliche-erklaerung.tex}
+
+\appendix
+\input{interview-anhang.tex}
+\input{kodierleitfaden.tex}
+
+\end{document}

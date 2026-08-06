@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# Indexer artifacts
+thesen/*/index/
+!thesen/_template/index/.gitkeep
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Pytest
+.pytest_cache/
+
+# Skills sync log
+tools/skills-sync.log

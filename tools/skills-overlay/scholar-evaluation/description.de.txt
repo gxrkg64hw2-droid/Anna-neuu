@@ -1,0 +1,1 @@
+Systematische Bewertung wissenschaftlicher Arbeiten mit dem ScholarEval-Framework: strukturiertes Assessment der Forschungsqualitaet (Problemformulierung, Methodik, Analyse, Schreibqualitaet) mit quantitativem Scoring und konkretem Feedback. Geeignet fuer Selbst-Audit eigener Bachelorarbeitskapitel vor der Abgabe.

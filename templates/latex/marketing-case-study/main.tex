@@ -1,0 +1,30 @@
+% Profile: marketing-case-study
+\input{_common/preamble.tex}
+\input{packages.tex}
+\input{frameworks.tex}
+
+\addbibresource{../bibliography.bib}
+
+\renewcommand{\thesisAuthor}{Vorname Nachname}
+\renewcommand{\thesisTitle}{Titel der Marketing-Case-Study}
+\renewcommand{\thesisHochschule}{Hochschulname}
+\renewcommand{\thesisStudiengang}{Marketing / BWL}
+
+\begin{document}
+
+\input{_common/titlepage.tex}
+\ifsperrvermerk\input{_common/sperrvermerk.tex}\fi
+\tableofcontents
+\input{_common/abkuerzungsverzeichnis.tex}
+
+\input{kapitel/01-management-summary.tex}
+\input{kapitel/02-marktanalyse.tex}
+\input{kapitel/03-wettbewerbsanalyse.tex}
+\input{kapitel/04-strategieempfehlung.tex}
+\input{kapitel/05-roadmap.tex}
+\input{kapitel/06-fazit.tex}
+
+\printbibliography
+\input{_common/eidesstattliche-erklaerung.tex}
+
+\end{document}

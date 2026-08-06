@@ -1,0 +1,78 @@
+% TikZ macros for marketing frameworks (Porter, BCG, SWOT, TAM/SAM/SOM).
+% Use \input{frameworks.tex} from any chapter.
+
+% Porter Five Forces (Pentagon)
+% Usage: \porterFiveForces{Wettbewerbsbeschreibung}{Lieferantenmacht}{Kundenmacht}{Markteintrittsbarrieren}{Substitute}
+\newcommand{\porterFiveForces}[5]{%
+  \begin{tikzpicture}[
+    force/.style={draw, fill=blue!10, rounded corners, minimum width=3.2cm, minimum height=1.5cm, align=center, font=\small}
+  ]
+    \node[force] (rivalry)     at (0,0)   {Wettbewerbsintensitaet\\#1};
+    \node[force] (suppliers)   at (-4.5,2.5) {Lieferanten\\#2};
+    \node[force] (buyers)      at (4.5,2.5)  {Kaeufer\\#3};
+    \node[force] (entrants)    at (-4.5,-2.5){Neue Anbieter\\#4};
+    \node[force] (substitutes) at (4.5,-2.5) {Substitute\\#5};
+    \draw[-Latex] (suppliers)   -- (rivalry);
+    \draw[-Latex] (buyers)      -- (rivalry);
+    \draw[-Latex] (entrants)    -- (rivalry);
+    \draw[-Latex] (substitutes) -- (rivalry);
+  \end{tikzpicture}
+}
+
+% BCG Matrix (4-Felder-Quadrant)
+% Usage: \bcgMatrix{Stars}{QuestionMarks}{CashCows}{Dogs}
+\newcommand{\bcgMatrix}[4]{%
+  \begin{tikzpicture}
+    \draw[thick] (0,0) rectangle (8,8);
+    \draw[thick] (4,0) -- (4,8);
+    \draw[thick] (0,4) -- (8,4);
+    \node[align=center, font=\bfseries] at (2,7.5) {Stars};
+    \node[align=center] at (2,5.5) {#1};
+    \node[align=center, font=\bfseries] at (6,7.5) {Question Marks};
+    \node[align=center] at (6,5.5) {#2};
+    \node[align=center, font=\bfseries] at (2,3.5) {Cash Cows};
+    \node[align=center] at (2,1.5) {#3};
+    \node[align=center, font=\bfseries] at (6,3.5) {Dogs};
+    \node[align=center] at (6,1.5) {#4};
+    \node[rotate=90, font=\small] at (-0.5,4) {Marktwachstum};
+    \node[font=\small] at (4,-0.5) {Relativer Marktanteil};
+  \end{tikzpicture}
+}
+
+% SWOT (4-Quadrant)
+% Usage: \swotQuadrant{Strengths}{Weaknesses}{Opportunities}{Threats}
+\newcommand{\swotQuadrant}[4]{%
+  \begin{tikzpicture}
+    \draw[thick] (0,0) rectangle (10,8);
+    \draw[thick] (5,0) -- (5,8);
+    \draw[thick] (0,4) -- (10,4);
+    \fill[green!15] (0,4) rectangle (5,8);
+    \fill[red!15]   (5,4) rectangle (10,8);
+    \fill[blue!15]  (0,0) rectangle (5,4);
+    \fill[orange!15](5,0) rectangle (10,4);
+    \draw[thick] (0,0) rectangle (10,8);
+    \draw[thick] (5,0) -- (5,8);
+    \draw[thick] (0,4) -- (10,4);
+    \node[align=center, font=\bfseries] at (2.5,7.5) {Staerken};
+    \node[align=left, text width=4cm] at (2.5,6) {#1};
+    \node[align=center, font=\bfseries] at (7.5,7.5) {Schwaechen};
+    \node[align=left, text width=4cm] at (7.5,6) {#2};
+    \node[align=center, font=\bfseries] at (2.5,3.5) {Chancen};
+    \node[align=left, text width=4cm] at (2.5,2) {#3};
+    \node[align=center, font=\bfseries] at (7.5,3.5) {Risiken};
+    \node[align=left, text width=4cm] at (7.5,2) {#4};
+  \end{tikzpicture}
+}
+
+% TAM/SAM/SOM (concentric circles)
+% Usage: \tamSamSom{TAM-Wert}{SAM-Wert}{SOM-Wert}
+\newcommand{\tamSamSom}[3]{%
+  \begin{tikzpicture}
+    \draw[fill=blue!10] (0,0) circle (4);
+    \draw[fill=blue!25] (0,0) circle (2.5);
+    \draw[fill=blue!40] (0,0) circle (1.2);
+    \node at (0,3) {\textbf{TAM:} #1};
+    \node at (0,1.7) {\textbf{SAM:} #2};
+    \node at (0,0) {\textbf{SOM:} #3};
+  \end{tikzpicture}
+}

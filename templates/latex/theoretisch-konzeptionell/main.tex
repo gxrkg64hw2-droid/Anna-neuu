@@ -1,0 +1,29 @@
+% Profile: theoretisch-konzeptionell
+\input{_common/preamble.tex}
+\input{packages.tex}
+
+\addbibresource{../bibliography.bib}
+
+\renewcommand{\thesisAuthor}{Vorname Nachname}
+\renewcommand{\thesisTitle}{Titel der theoretisch-konzeptionellen Bachelorarbeit}
+\renewcommand{\thesisHochschule}{Hochschulname}
+\renewcommand{\thesisStudiengang}{Studiengang}
+
+\begin{document}
+
+\input{_common/titlepage.tex}
+\ifsperrvermerk\input{_common/sperrvermerk.tex}\fi
+\tableofcontents
+\input{_common/abkuerzungsverzeichnis.tex}
+
+\input{kapitel/01-einleitung.tex}
+\input{kapitel/02-begriffsapparat.tex}
+\input{kapitel/03-theoretischer-rahmen.tex}
+\input{kapitel/04-synthese.tex}
+\input{kapitel/05-diskussion.tex}
+\input{kapitel/06-fazit.tex}
+
+\printbibliography
+\input{_common/eidesstattliche-erklaerung.tex}
+
+\end{document}

@@ -1,0 +1,1 @@
+Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, OpenAlex; for DACH-context business/marketing also GBV, DBIS, wiso, JSTOR, Beck-Online). Creates professionally formatted markdown documents and PDFs with verified citations. For DACH citation styles consult dach_zitierweisen.md.
