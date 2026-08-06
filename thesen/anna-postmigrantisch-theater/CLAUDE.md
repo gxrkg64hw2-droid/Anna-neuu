@@ -48,7 +48,9 @@ Literatur entwickelte Schlussfolgerungen formulieren, nicht als eigene normative
 - **KRITISCH:** Im Entwurf stehen überall Platzhalter „(Jahr)" und noch **nicht verifizierte
   Seitenzahlen**. Vor jeder Übernahme in den Fließtext: frischer `rag search`, `citation_suggestion`
   verbatim, echte Bibkeys + geprüfte Seiten. Kein Zitat aus dem Gedächtnis.
-- **Kap. 3, 4, Einleitung, Fazit:** noch nicht geschrieben.
+- **Kap. 2 (Von der Theorie zur Praxis):** FERTIG, verifiziert. „Community"-Lücke geschlossen: alle Beispiele (Unmündigen, Fest des deutschen Mitbürgers, gesternJahre, Rückkehrer-Stammtisch) aus Yıldız 2025 belegt.
+- **Kap. 3 (Theater als Praxisform):** FERTIG, verifiziert. Ballhaus Naunynstraße via Carvalho/Larsson 2022, Sharifi/Skwirblies 2022, Balme 2022, Langhoff 2011.
+- **Kap. 4 (Satire), Einleitung, Fazit:** noch offen. Kap. 4 braucht Datteltäter-Video (Minuten-Zitat) oder theoretischen Anker Yıldız 2025 S. 237.
 
 ## Korpus (Lean-Modus, 7 PDFs in `pdfs/`, NICHT im Git)
 
