@@ -1,91 +1,122 @@
-# CLAUDE.md (Thesis Brief)
+# CLAUDE.md (Thesis Brief) — anna-postmigrantisch-theater
 
-**Profile:** `theoretisch-konzeptionell`
+**Profil:** `theoretisch-konzeptionell` · **Modus:** Lean · **Sprache:** Deutsch
 
+> Dies ist eine **Seminararbeit** (Theoriearbeit), kein voller BA-Umfang. Die Bridge-Skill
+> `bachelorarbeit-arbeitsweise` gilt trotzdem vollständig, sobald `.tex`- oder Thesis-Inhalt
+> geschrieben wird. Root-`CLAUDE.md` bleibt übergeordnet.
 
-> Copy this folder to `thesen/anna-postmigrantisch-theater/` and edit this file.
->
-> See repo-root `CLAUDE.md` for the full system reference. This file is for thesis-specific context.
+## Thema und Fragestellung
 
-## Thesis topic
+- **Arbeitstitel:** „Kunst und Gesellschaftskritik – Theater und Satire als Räume postmigrantischer Sichtbarkeit und Zugehörigkeit"
+- **Forschungsfrage:** Welche Rolle spielen postmigrantisches Theater und Satire als Formen der Gesellschaftskritik bei der Hinterfragung dominanter Vorstellungen von Migration und Zugehörigkeit?
+- **Zentrale These (laut Betreuer-Feedback Rotter):** Postmigrantisches Theater und Satire sind Ausdruck postmigrantischer Perspektiven, weil sie die theoretische Kritik am methodologischen Migrantismus praktisch umsetzen und dadurch dominante Vorstellungen von Migration und Zugehörigkeit infrage stellen.
 
-(One paragraph: research question, scope, why it matters. Keep it short, this is a brief.)
+## Formale Vorgaben (aus der Aufgabenstellung, Fotos)
 
-## Mode
+- **Umfang:** 8–10 Seiten Fließtext, **mindestens 2.840 Wörter**, Abgabe als **PDF**.
+- **Deadline:** **09. August 2026** (Begutachtungsfrist 1 Monat).
+- **Schrift:** Times New Roman 12 / Zeilenabstand 1,5 (alternativ Calibri, Aptos oder Arial 11 / 1,5).
+- **Ränder:** links 2,5 cm, rechts 3,5 cm. **Blocksatz** mit automatischer Silbentrennung.
+- **Gendergerechte Sprache** (konsistent, z. B. Doppelpunkt: „Migrant:innen").
+- **Zitation:** direkte Zitate und Paraphrasen so genau wie möglich, **immer mit Seitenzahl**.
+- **Formaler Aufbau:** Titelblatt (Name, Studienkennzahl, Matrikelnummer, Seminartitel, Leiter, Semester, Thema, Abgabedatum) · Inhaltsverzeichnis · Einleitung (nicht nummeriert) · Hauptteil (Kapitel/Unterkapitel) · Resümee/Ausblick · Literaturverzeichnis (alphabetisch).
 
-Pick one and remove the other. Mode determines the bib workflow.
+## Betreuer-Methodik (Rotter) — WICHTIG für den Aufbau
 
-- [ ] **Premium**: User exports their Zotero collection to `bibliography.bib` via Better BibTeX with "Export with Auto-Update". Better BibTeX writes `file = {filename.pdf}` fields automatically; the indexer auto-links bibkeys/title/authors/year on every `python -m rag index` run.
-- [x] **Lean**: User drops only PDFs. Run `python -m rag bib --thesis <name> --build` to assemble the bib via DOI/OpenAlex/Crossref/title-search. Auto-linking happens at the end of the build.
+Es ist **keine** klassische Analyse (Theorie → Analyse → Fazit), sondern eine Theoriearbeit mit
+Richtung **Theorie → theoretisch begründete Ableitung → Beispiel als Praxisform → Fazit**.
+Die Beispiele (Theater, Satire) dienen dazu, die vorher aus der Theorie abgeleitete These zu
+**stützen/veranschaulichen/plausibel machen** (nicht „beweisen"). Ableitungen immer als aus der
+Literatur entwickelte Schlussfolgerungen formulieren, nicht als eigene normative Aussagen darüber,
+„wie Kunst sein müsste".
 
-## Profile
+## Kapitelstruktur mit Wortbudget
 
-This thesis uses the `<profil>` LaTeX profile. See `templates/latex/<profil>/README.md` for the chapter structure and profile-specific helpers.
+| Teil | Inhalt | Wörter |
+|---|---|---|
+| Einleitung | Hinführung, Forschungsfrage, Begründung, Vorgehen, Übersicht | 250–350 |
+| Kap. 1 Theoretische Grundlagen | 1.1 Methodologischer Migrantismus · 1.2 Postmigrantische Perspektive · 1.3 Zwischenfazit | 900–1.100 |
+| Kap. 2 Von der Theorie zur Praxis | Ableitung + 4 Kategorien (Wir/Andere hinterfragen; Migration als Normalität; neue Zugehörigkeit; Gesellschaftskritik) | 400–600 |
+| Kap. 3 Theater als Praxisform | Ballhaus Naunynstraße (ggf. Maxim Gorki), Langhoff-Interview | 600–800 |
+| Kap. 4 Satire als Praxisform | Die Datteltäter (Video-Zitate mit Link/Jahr/Titel/**Minute**) | 600–800 |
+| Fazit | Beantwortung der Forschungsfrage, zentrale These, Ausblick | 250–350 |
 
-## Writing skills
+## Bearbeitungsstand (Stand: Übergabe)
 
-When you (Claude) write content in this thesis folder, the bridge skill `bachelorarbeit-arbeitsweise` activates automatically and enforces:
-- `python -m rag search` before every claim
-- `python -m rag verify-quote` after every paragraph
-- `python -m rag extract-citations --strict` before every commit
-- Brave/Firecrawl MCPs only for material outside the corpus, always with URL + Stand-Datum
+- **Kap. 1:** Erstentwurf vorhanden (Volltext in `notes/entwurf-anna-stand.md`), Kap. 2 begonnen.
+- **KRITISCH:** Im Entwurf stehen überall Platzhalter „(Jahr)" und noch **nicht verifizierte
+  Seitenzahlen**. Vor jeder Übernahme in den Fließtext: frischer `rag search`, `citation_suggestion`
+  verbatim, echte Bibkeys + geprüfte Seiten. Kein Zitat aus dem Gedächtnis.
+- **Kap. 3, 4, Einleitung, Fazit:** noch nicht geschrieben.
 
-## Chapter structure
+## Korpus (Lean-Modus, 7 PDFs in `pdfs/`, NICHT im Git)
 
-1. Introduction
-2. Theoretical Foundations
-3. Methodology
-4. Results
-5. Discussion
-6. Conclusion
+Die Buch-Scans sind urheberrechtlich geschützt und per `.gitignore` vom Push ausgeschlossen
+(`thesen/*/pdfs/*.pdf`). Sie liegen nur lokal für `rag index`. Bei Neustart neu bereitstellen
+(siehe `SETUP-NETZWERK.md`).
 
-## Status
+| Datei | Werk | Gedruckte Seiten (aus Dateiname) |
+|---|---|---|
+| `postmigrantisch-denken-teil1.pdf` | Yıldız (Hg.), Postmigrantisch denken | S. 1–142 |
+| `postmigrantisch-denken-teil2.pdf` | dass. | S. 143–283 |
+| `postmigrantische-visionen-teil1.pdf` | Hill & Yıldız (2018), Postmigrantische Visionen | S. 1–129 |
+| `postmigrantische-visionen-teil2.pdf` | dass. | S. 130–257 |
+| `theaterwissenschaft-postkolonial-teil1.pdf` | Sharifi & Skwirblies (2022), Theaterwissenschaft postkolonial/dekolonial | S. 1–150 |
+| `theaterwissenschaft-postkolonial-teil2.pdf` | dass. | S. 151–299 |
+| `interview-langhoff-2011-bpb.pdf` | Langhoff (2011), Interview „Die Herkunft spielt keine Rolle", bpb.de | Web (@online) |
 
-- Chapter 1: not started
-- Chapter 2: not started
-- Chapter 3: not started
+Der Print-Offset pro Teil ist beim Indexieren zu prüfen (`corpus --pretty`); bei Bedarf
+`overrides.toml` setzen. Teil-2-Dateien haben einen Offset (z. B. Teil2 PDF-Seite 1 = gedruckte S. 143).
 
-## Conventions
+## Fehlende Quellen (BLOCKER für Kap. 2 und 4)
 
-- **Citation style:** APA 7th in BibLaTeX. `\parencite[S. X]{key}` for German page references. `\textcite[S. X]{key}` for narrative.
-- **Language:** German prose, English source citations are fine.
-- **Quotation marks:** German `,,quote''`.
-- **Special advisor preferences:** none yet.
+1. **Yıldız & Rotter, „Community"** (S. 405–413): Beispiele „Die Unmündigen" („Ihr seid gefährlich!"),
+   Ausstellung „gesternJahre – 50 Jahre gastArbeiter", „Rückkehrer-Stammtisch" (Transtopie),
+   „Kunst gegen Rassismus" / „Fest des deutschen Mitbürgers". In keinem hochgeladenen PDF enthalten.
+   → Von der Verfasserin als PDF nachfordern.
+2. **Datteltäter** (Kap. 4): konkretes Video/Sketch wählen; Zitierweise Link + Jahr + Titel + Minute.
+   → Auswahl mit der Verfasserin klären (oder recherchieren, sobald Netz erlaubt Brave/Firecrawl).
 
-## Source notes
+Weitere in der Gliederung genannte, noch nicht im Korpus: Alkin & Geuer (2022) Postkolonialismus und
+Postmigration; Donlic (2025). Nur nutzen, wenn als PDF bereitgestellt.
 
-Use `overrides.toml` (in this folder) for per-PDF corrections that the indexer should pick up. Examples:
+## Modus
 
-```toml
-[pdf."rogers-1983.pdf"]
-print_offset = 14
-print_offset_confidence = 1.0
-```
+- [x] **Lean**: nur PDFs. `uv run python -m rag bib --thesis anna-postmigrantisch-theater --build`
+  baut die `bibliography.bib` (DOI/OpenAlex/Crossref/Titelsuche) und verlinkt Bibkeys.
+- [ ] Premium (kein Zotero-Export vorhanden).
 
-Add a TOML entry whenever `corpus --pretty` shows `print_offset_confidence` below 0.7 for a PDF you care about.
+## Ausgabeformat (Entscheidung offen halten)
 
-## Active TODO
+Im Cloud-Container ist **kein LaTeX** installiert → `.tex` kann hier nicht kompiliert werden.
+`libreoffice/soffice` ist vorhanden. Zwei Optionen:
+1. **`.docx` → PDF** (via LibreOffice), exakt nach obiger Formvorgabe (TNR 12, Ränder 2,5/3,5, Blocksatz).
+   Rendert im Container. Empfohlen, weil es die Word-Vorgaben des Betreuers 1:1 trifft.
+2. Strikt LaTeX-Workflow (`tex/`), Verfasserin kompiliert extern.
+Die RAG-Zitatprüfung (`rag search` + `verify-quote`) ist formatunabhängig und wird in beiden Fällen
+voll genutzt.
 
-- (List what is in flight right now. Update as you go.)
+## Konventionen
 
-## Specific instructions for Claude
+- **Deutsche Typographie:** echte Umlaute (ö ä ü ß), KEINE Em-/En-Dashes, `\enquote{...}` bzw.
+  deutsche Anführungszeichen „…", Komma als Dezimaltrennzeichen, max. ~25 Wörter/Satz.
+- **Gendering:** Doppelpunkt-Form („Migrant:innen"), konsistent durchhalten.
+- **Bibkeys:** sprechend, z. B. `yildizPostmigrantischDenken`, `hillYildizVisionen2018`,
+  `sharifiSkwirblies2022`, `langhoff2011`, `yildizRotterCommunity`.
 
-(Anything unusual, e.g. "use only post-2020 sources", "advisor wants empirical, not theoretical citations", "do not cite blog posts even when they are in the corpus".)
+## Netzwerk-Voraussetzung
 
-## Useful commands for this thesis
+Das RAG-System braucht `openrouter.ai` (Embeddings) und `openaipublic.blob.core.windows.net`
+(tiktoken). Beide müssen in der Netzwerk-Policy der Cloud-Umgebung erlaubt sein
+(Custom-Allowlist oder Full). Details und Neustart-Ablauf: `SETUP-NETZWERK.md`.
+
+## Nützliche Befehle
 
 ```bash
-# Inventory
-uv run python -m rag corpus --thesis <name> --pretty
-
-# Search (replace concept)
-uv run python -m rag search "your concept" --thesis <name> --top 8 --pretty
-
-# Verify a sentence you just wrote
-uv run python -m rag verify-quote --text "..." --thesis <name>
-
-# Audit citations before any commit to .tex
-uv run python -m rag extract-citations \
-  --tex tex/main.tex --thesis <name> \
-  --check-bib --check-corpus --check-orphans --pretty
+uv run python -m rag corpus  --thesis anna-postmigrantisch-theater --pretty
+uv run python -m rag index   --thesis anna-postmigrantisch-theater
+uv run python -m rag bib      --thesis anna-postmigrantisch-theater --build --pretty
+uv run python -m rag search   "methodologischer Migrantismus" --thesis anna-postmigrantisch-theater --top 5 --pretty
+uv run python -m rag verify-quote --text "..." --thesis anna-postmigrantisch-theater
 ```
