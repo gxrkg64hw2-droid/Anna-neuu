@@ -1,0 +1,86 @@
+% _common/preamble.tex
+% Shared preamble for all thesis profiles. Loaded by main.tex via \input{_common/preamble.tex}.
+\documentclass[
+  11pt,
+  a4paper,
+  bibliography=totoc,
+  listof=totoc,
+  parskip=half,
+  numbers=noenddot
+]{scrreprt}
+
+% --- Encoding and language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}              % harmless under lualatex (no-op)
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}                    % deutsche Anfuehrungszeichen via \enquote{...}
+
+% --- Bibliography (biblatex + biber, APA style by default)
+\usepackage[
+  backend=biber,
+  style=apa,
+  language=ngerman,
+  sortlocale=de_DE,
+  natbib=true,
+  url=true,
+  doi=true,
+  isbn=false,
+  eprint=false,
+  maxcitenames=2,
+  maxbibnames=99
+]{biblatex}
+
+% --- Typography polish
+\usepackage{microtype}                   % subtle kerning + protrusion
+\usepackage{setspace}
+\onehalfspacing                          % typical DACH thesis line spacing
+
+% --- Math
+\usepackage{amsmath, amssymb}
+
+% --- Tables and figures
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{{figures/}{../figures/}}
+
+% --- TikZ + pgfplots ready (profiles may activate libraries they need)
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% --- SI units (German: comma as decimal separator)
+\usepackage{siunitx}
+\sisetup{
+  output-decimal-marker={,},
+  group-separator={\,},
+  group-minimum-digits=4
+}
+
+% --- Hyperref (load late)
+\usepackage{xcolor}
+\usepackage[
+  hidelinks,
+  bookmarks=true,
+  pdfencoding=auto
+]{hyperref}
+
+% --- Custom title-page metadata (used by titlepage.tex)
+\newcommand{\thesisAuthor}{Vorname Nachname}
+\newcommand{\thesisMatrikel}{xxxxxxx}
+\newcommand{\thesisTitle}{Titel der Bachelorarbeit}
+\newcommand{\thesisSubtitle}{}
+\newcommand{\thesisHochschule}{Hochschulname}
+\newcommand{\thesisStudiengang}{Studiengang}
+\newcommand{\thesisErstpruefer}{Prof. Dr. Erstpruefer}
+\newcommand{\thesisZweitpruefer}{Prof. Dr. Zweitpruefer}
+\newcommand{\thesisAbgabedatum}{TT. Monat JJJJ}
+
+% --- Sperrvermerk switch (default off)
+\newif\ifsperrvermerk
+\sperrvermerkfalse
+
+% --- Gendering switch (default neutral; see gendering.tex)
+\input{_common/gendering.tex}

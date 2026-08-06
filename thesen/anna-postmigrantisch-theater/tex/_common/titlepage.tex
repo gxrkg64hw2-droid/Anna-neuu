@@ -1,0 +1,25 @@
+% _common/titlepage.tex
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\large \thesisHochschule\par}
+\vspace{0.5cm}
+{\large \thesisStudiengang\par}
+\vspace{3cm}
+{\Large \textbf{Bachelorarbeit}\par}
+\vspace{1cm}
+{\LARGE \thesisTitle\par}
+\ifx\thesisSubtitle\empty\else
+  \vspace{0.5cm}
+  {\Large \thesisSubtitle\par}
+\fi
+\vfill
+\begin{tabular}{rl}
+  Vorgelegt von:        & \thesisAuthor          \\
+  Matrikelnummer:       & \thesisMatrikel        \\
+  Erstpruefer:          & \thesisErstpruefer     \\
+  Zweitpruefer:         & \thesisZweitpruefer    \\
+  Abgabedatum:          & \thesisAbgabedatum     \\
+\end{tabular}
+\vspace{2cm}
+\end{titlepage}

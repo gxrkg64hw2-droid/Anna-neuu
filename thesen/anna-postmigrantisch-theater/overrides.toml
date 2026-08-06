@@ -1,0 +1,9 @@
+# Per-PDF overrides (NOT YET IMPLEMENTED in v0.1.0, planned for v0.1.1).
+# Examples:
+#
+# [pdf."rogers-1983.pdf"]
+# print_offset = 14
+# print_offset_confidence = 1.0
+#
+# [pdf."some-scan.pdf"]
+# vision_ocr = true

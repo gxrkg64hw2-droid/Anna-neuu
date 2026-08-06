@@ -1,0 +1,13 @@
+% _common/gendering.tex
+% Defines macros for gender-conscious language. Default: neutral. Override in main.tex via:
+%   \renewcommand{\genderstil}{\genderstern}
+\newcommand{\genderneutral}[2]{#2}
+\newcommand{\genderstern}[2]{#1*innen}
+\newcommand{\genderbinneni}[2]{#1Innen}
+\newcommand{\gendergap}[2]{#1\_innen}
+
+% Default style: neutral
+\newcommand{\genderstil}{\genderneutral}
+
+% Helper: \dgender{Lehrer}{Lehrkraft} -> "Lehrkraft" (neutral) or "Lehrer*innen" (stern)
+\newcommand{\dgender}[2]{\genderstil{#1}{#2}}

@@ -23,3 +23,6 @@ thesen/*/index/
 
 # Skills sync log
 tools/skills-sync.log
+
+# Copyrighted source PDFs stay local (used only for local rag index)
+thesen/*/pdfs/*.pdf
