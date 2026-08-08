@@ -50,7 +50,13 @@ Literatur entwickelte Schlussfolgerungen formulieren, nicht als eigene normative
   verbatim, echte Bibkeys + geprüfte Seiten. Kein Zitat aus dem Gedächtnis.
 - **Kap. 2 (Von der Theorie zur Praxis):** FERTIG, verifiziert. „Community"-Lücke geschlossen: alle Beispiele (Unmündigen, Fest des deutschen Mitbürgers, gesternJahre, Rückkehrer-Stammtisch) aus Yıldız 2025 belegt.
 - **Kap. 3 (Theater als Praxisform):** FERTIG, verifiziert. Ballhaus Naunynstraße via Carvalho/Larsson 2022, Sharifi/Skwirblies 2022, Balme 2022, Langhoff 2011.
-- **Kap. 4 (Satire), Einleitung, Fazit:** noch offen. Kap. 4 braucht Datteltäter-Video (Minuten-Zitat) oder theoretischen Anker Yıldız 2025 S. 237.
+- **Kap. 4 (Satire):** FERTIG, verifiziert. Datteltäter vollständig aus Yıldız 2025 (S. 133–135 Kollektiv, S. 237 Theorie) belegt. KEIN Video nötig.
+- **Einleitung + Fazit:** FERTIG.
+- **ROHFASSUNG KOMPLETT:** 2.858 Wörter, alle Belege offline geprüft, Plagiatscheck bestanden.
+  Ausgabe: `Seminararbeit-postmigrantisch.pdf` (via `tools/anna-build-pdf.py`, PyMuPDF; LibreOffice im Container defekt)
+  und `Seminararbeit-postmigrantisch.docx` (via `tools/anna-build-docx.py`, editierbar in Word).
+  OFFEN nur: Titelblatt-Daten (Name, Studienkennzahl, Matrikelnummer, Seminartitel, Leitung, Semester)
+  in `arbeit.md`/Generator eintragen. Optional: konkretes Datteltäter-Video mit Minutenangabe.
 
 ## Korpus (Lean-Modus, 7 PDFs in `pdfs/`, NICHT im Git)
 
